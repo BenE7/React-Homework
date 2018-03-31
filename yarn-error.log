@@ -26,6 +26,7 @@ npm manifest:
     "author": "",
     "license": "ISC",
     "dependencies": {
+      "axios": "^0.18.0",
       "body-parser": "^1.18.2",
       "express": "^4.16.3",
       "mongodb": "^3.0.5",
@@ -448,7 +449,7 @@ Trace:
   Exit code: 1
   Command: sh
   Arguments: -c node server.js
-  Directory: /Users/benevans/React-NYT
+  Directory: /Users/benevans/React-Homework
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)

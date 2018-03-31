@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import {getArticles} from './utilities/api.js';
 
 class App extends Component {
+  componentDidMount(){
+    getArticles().then(data =>{
+      console.log(data);
+    });
+  };
+
   render() {
     return (
       <div className="App">

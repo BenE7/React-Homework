@@ -12,6 +12,14 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
+
+mongoose.Promise = global.Promise;
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact", {
+  useMongoClient: true
+});
+
+
+
 app.listen(PORT, function() {
   console.log("Server now on port ${PORT}!");
 });
