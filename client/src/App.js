@@ -37,16 +37,6 @@ class App extends Component {
               <input type="text" className="form-control" />
             </div>
 
-            <div className="form-group">
-              <label>Start Year</label>
-              <input type="destination" className="form-control" />
-            </div>
-
-            <div className="form-group">
-              <label>End Year</label>
-              <input type="start date" className="form-control" />
-            </div>
-
             <button id="submit" type="button" className="btn btn-primary">
               Submit
             </button>
